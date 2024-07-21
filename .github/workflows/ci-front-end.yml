@@ -29,4 +29,4 @@ jobs:
         run: pnpm --filter front-end i --frozen-lockfile --unsafe-perm --stream
 
       - name: Run Playwright Tests
-        run: pnpm run -r test:e2e
+        run: pnpm --filter front-end test:e2e
