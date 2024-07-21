@@ -26,7 +26,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm i --frozen-lockfile --unsafe-perm --stream --filter=front-end
+        run: pnpm --filter front-end i --frozen-lockfile --unsafe-perm --stream
 
       - name: Run Playwright Tests
         run: pnpm run -r test:e2e
