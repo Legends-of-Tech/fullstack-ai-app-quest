@@ -5,7 +5,7 @@ export default defineConfig({
   timeout: 30000,
   webServer: {
     command: 'pnpm run -r dev',
-    url: 'http://localhost:8080',
+    port: 8080,
     reuseExistingServer: true
   },
   use: {

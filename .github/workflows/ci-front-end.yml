@@ -28,5 +28,8 @@ jobs:
       - name: Install dependencies
         run: pnpm --filter front-end i --frozen-lockfile --unsafe-perm --stream
 
+      - name: Run server
+        run: pnpm run -r dev
+
       - name: Run Playwright Tests
         run: pnpm --filter front-end test:e2e
